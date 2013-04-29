@@ -1,4 +1,9 @@
 # vim: sw=2 ts=2
+richo_generic() {
+  requires "dev_environment"
+  requires "irssi_installed"
+}
+
 dev_environment() {
   requires "tmux_installed"
   requires "git_installed"
