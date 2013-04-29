@@ -2,8 +2,6 @@
 dev_environment() {
   requires "tmux_installed"
   requires "urxvt_installed"
-
-  process
 }
 
 tmux_installed() {
