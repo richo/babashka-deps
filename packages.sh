@@ -9,6 +9,11 @@ dev_environment() {
   requires "git_installed"
 }
 
+elaborate_shell() {
+  requires "zsh_installed"
+  requires "tmux_installed"
+}
+
 tmux_installed() {
   install_package tmux
 
@@ -30,6 +35,12 @@ git_installed() {
 
 irssi_installed() {
   install_package irssi
+
+  process
+}
+
+zsh_installed() {
+  install_package zsh
 
   process
 }
