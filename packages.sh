@@ -62,3 +62,10 @@ libtool() {
 
   process
 }
+
+libcurl_dev() {
+  install_package libcurl4-gnutls-dev
+
+  process
+
+}

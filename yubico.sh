@@ -50,6 +50,7 @@ yubico_personalization_checked_out() {
 
 libykclient_configured() {
     requires "libykclient_autoconfd"
+    requires "libcurl_dev"
 
     configured "$HOME/code/yubico-c-client"
 }
