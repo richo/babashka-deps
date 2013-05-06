@@ -44,3 +44,15 @@ zsh_installed() {
 
   process
 }
+
+build_essential() {
+  install_package build-essential
+
+  process
+}
+
+autotools() {
+  install_package autoconf
+
+  process
+}
