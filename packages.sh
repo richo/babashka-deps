@@ -56,3 +56,9 @@ autotools() {
 
   process
 }
+
+libtool() {
+  install_package libtool
+
+  process
+}
