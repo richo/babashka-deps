@@ -51,12 +51,12 @@ yubico_personalization_checked_out() {
 libykclient_configured() {
     requires "libykclient_autoconfd"
 
-    configured "/home/richo/code/yubico-c-client"
+    configured "$HOME/code/yubico-c-client"
 }
 
 libykclient_autoconfd() {
     requires "yubico_c_client_checked_out"
-    autoreconfd "/home/richo/code/yubico-c-client"
+    autoreconfd "$HOME/code/yubico-c-client"
 
     process
 }
