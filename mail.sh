@@ -65,8 +65,8 @@ case "`uname -s`" in
         dpkg -l | grep ${apt_pkg:-$_package_name}
     }
     function meet() {
-    [ -n "$__babushka_force" ] && apt_flags="${apt_flags} -f --force-yes"
-    $__babashka_sudo apt-get install $apt_flags ${apt_pkg:-$_package_name}
+    [ -n "$__babushka_force" ] && apt_flags="${apt_flags} -f -y"
+    DEBCONF_TERSE='yes' DEBIAN_PRIORITY='critical' DEBIAN_FRONTEND='noninteractive' $__babashka_sudo aptitude install $apt_flags ${apt_pkg:-$_package_name}
 }
 ;;
    Darwin)
